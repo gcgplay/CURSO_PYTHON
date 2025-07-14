@@ -1,0 +1,26 @@
+* {
+    /*zerar o CSS - tirar a margem e o padding padrão*/
+    margin: 0;
+    padding: 0;
+}
+
+p { /*será aplicado a todos os parágrafos*/
+    color: red;
+}
+
+body div section p { /*seleciona o parágrafo do caminho especificado*/
+    color: green;
+}
+
+body div section p, 
+body div section h1 { /*seleciona mais de um elemento*/
+    color: green;
+}
+
+h1, p { /*todos paragrafos e títulos*/
+    color: yellow;
+}
+
+.heading { /*classe*/
+    color: turquoise;
+}

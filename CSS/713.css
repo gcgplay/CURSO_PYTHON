@@ -1,0 +1,21 @@
+.bloco { 
+    display: block; /*pega configurações de tamanho*/
+    background: red;
+    width: 40%;
+    height: 80%;
+    max-width: 600px; /*Limita a largura máxima do elemento*/
+    min-width: 0;
+    min-height: 100px;
+    /*overflow-y: scroll; /*se o texto for maior que a div coloca um scroll para ver o texto*/
+    overflow: auto; /*Adiciona barras de rolagem automáticas*/
+    margin: auto; /*Centraliza o elemento horizontalmente*/
+    padding: 50px; /*Adiciona um espaço interno afastando o conteúdo das bordas.*/
+    border: solid 10px black;
+}
+
+.linha {
+    display: inline; /*ignora propriedades de tamanhos*/
+    background: gray;
+    width: 50px;
+}
+

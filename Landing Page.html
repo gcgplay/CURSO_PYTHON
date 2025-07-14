@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--O CÓDIGO FOI SEPARADO EM VÁRIOS ARQUIVOS CSS APENAS PARA FACILITA A APRESENTAÇÃO-->
+<!--O IDEAL É MANTER TODO O CÓDIGO EM UM MESMO ARQUIVO-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="CSS/variables.css">
+    <link rel="stylesheet" href="CSS/elements.css">
+    <link rel="stylesheet" href="CSS/classes.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#intro">LOGO</a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;"> <!--fechar o menu ao clicar-->
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#top3">top 3</a></li>
+                    <li><a href="#grid-one">grid-one</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#grid-two">grid-two</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing">
+        
+    </div>
+
+    <section id="intro" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>news coverage and some surprises</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum, reiciendis, 
+                    aspernatur dignissimos voluptatum asperiores harum voluptates magnam id nihil impedit 
+                    dolorem! Consequatur perspiciatis dolores totam doloremque quo ad vero?</p>
+            </div>
+            <div class="intro-img">
+                <img src="image/javascript.svg" alt="Logo de HTML, CSS e JS">
+            </div>
+        </div>
+    </section>
+
+    <section id="top3" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>top 3 jobs</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, dolor? 
+                Nihil ipsa fuga nobis nam, esse consequatur quasi, vel facere, dolores iusto suscipit 
+                voluptatem tempora. Id cumque ipsa expedita possimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate maiores tempora 
+                odit soluta reiciendis deserunt cum eveniet rerum ducimus similique placeat, nam, voluptate, 
+                quibusdam nulla ullam id voluptatem eum reprehenderit?</p>
+        </div>
+    </section>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição.</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab, repellendus vero 
+                    earum nemo est officia architecto doloremque placeat, error corrupti voluptatum soluta 
+                    assumenda amet magni! Quia, perspiciatis libero? Eaque?
+                </p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab, repellendus vero 
+                    earum nemo est officia architecto doloremque placeat, error corrupti voluptatum soluta 
+                    assumenda amet magni! Quia, perspiciatis libero? Eaque?
+                </p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab, repellendus vero 
+                    earum nemo est officia architecto doloremque placeat, error corrupti voluptatum soluta 
+                    assumenda amet magni! Quia, perspiciatis libero? Eaque?
+                </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Uma breve descrição.</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://portosuitesnatalhotel.com.br/wp-content/uploads/2015/08/Piscina-_S3A7960-360x360.jpg" alt="random image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/motorcycles/modern-classics/t%20series/scrambler%20400%20x/scrambler%20400%20x%20family%20page/scrambler-400-x-my24-family-r2r-card-360x360.jpg" alt="random image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://shopveterinario.com.br/wp-content/uploads/2023/04/cardiomiopatia-dilatada-em-caes-artigo-360x360-1.jpg" alt="random image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://aramis-wp.s3.us-west-2.amazonaws.com/2023/05/Capa-Quadrada-7-360x360.jpg" alt="random image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://aramis-wp.s3.us-west-2.amazonaws.com/2023/05/Capa-Quadrada-7-360x360.jpg" alt="random image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/motorcycles/modern-classics/t%20series/speed%20400/speed%20400%20family%20page/speed-400-my24-family-r2r-card-1-360x360.jpg" alt="random image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My Grid 2</h2>
+            <p class="grid-description">Uma breve descrição.</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab, repellendus vero 
+                    earum nemo est officia architecto doloremque placeat, error corrupti voluptatum soluta 
+                    assumenda amet magni! Quia, perspiciatis libero? Eaque?
+                </p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab, repellendus vero 
+                    earum nemo est officia architecto doloremque placeat, error corrupti voluptatum soluta 
+                    assumenda amet magni! Quia, perspiciatis libero? Eaque?
+                </p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab, repellendus vero 
+                    earum nemo est officia architecto doloremque placeat, error corrupti voluptatum soluta 
+                    assumenda amet magni! Quia, perspiciatis libero? Eaque?
+                </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>pricing</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, dolor? 
+                Nihil ipsa fuga nobis nam, esse consequatur quasi, vel facere, dolores iusto suscipit 
+                voluptatem tempora. Id cumque ipsa expedita possimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate maiores tempora 
+                odit soluta reiciendis deserunt cum eveniet rerum ducimus similique placeat, nam, voluptate, 
+                quibusdam nulla ullam id voluptatem eum reprehenderit?</p>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+                    <thead>
+                        <tr>
+                        <th>Title 1</th>
+                        <th>Title 2</th>
+                        <th>Title 3</th>
+                        <th>Title 4</th>
+                        <th>Title 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <!--<td colspan="3">test</td>-->
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>        
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>news coverage and some surprises</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum, reiciendis, 
+                    aspernatur dignissimos voluptatum asperiores harum voluptates magnam id nihil impedit 
+                    dolorem! Consequatur perspiciatis dolores totam doloremque quo ad vero?</p>
+            </div>
+            <div class="intro-img">
+                <img src="image/javascript.svg" alt="Logo de HTML, CSS e JS">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Tour last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your E-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class=" footer white-bg">
+        <p><a rel="nofollow" target="_blank" href="https://google.com.br">Feito por Gabriel C. G. <span class="heart">★</span></a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">⮉</a>
+</body>
+</html>

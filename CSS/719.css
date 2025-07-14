@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 15px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    /*display: block; /*blocos um embaixo do outro*/
+    /*display: inline-block; /*blocos um do lado do outro*/
+    /*display: inline; /*não aparece tamanho*/
+    width: 33.33%;
+    height: 300px;
+    /*background: red;*/
+    /*margin: 30px; /*margens se sobrepõem*/
+    float: left; /*cada uma ocupa seu espaço, as margens não se sobrepõem*/
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+@media (max-width: 320px) { /*até 320px de tela*/
+    .grid .col {
+        width: 100%; /*exibe um elemento por linha - largura 100%*/
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) { /*pelo menos 321px até 768px*/
+    .grid .col {
+        width: 50%; /*exibe dois elementos por linha - largura 50%*/
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) { /*pelo menos 769px até 1200px*/
+    .grid .col {
+        width: 33.33%; /*exibe 3 elementos por linha - largura 33.33%*/
+    }
+}
+
+@media (min-width: 1200px) { /*acima de 1200px*/
+    .grid .col {
+        width: 25%; /*exibe 4 elementos por linha - largura 25%*/
+    }
+}
+
+

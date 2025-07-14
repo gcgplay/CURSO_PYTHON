@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS */
+        h1 {
+            background: red; /* Fundo vermelho em todos h1 */
+        }
+
+        p {
+            background: blue;
+        }
+
+        /*Apagar esse trecho*/
+        #Título-1 { /* usando o id */
+            background: purple;
+        }
+        
+        .fundo-vermelho { /* não funciona pois a classe não sobrepoe o id */
+            /*background: yellow; */
+            background: yellow !important;  /* faz funcionar forçadamente NÂO RECOMENDADO*/
+
+        }
+
+        /* não utilize estilos em id, é preferivel utilizar apenas a classe */
+        .bold{
+            color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="Título-1" class="fundo-vermelho borda-esquerda"> <!--a class pode ser repetida e com mais de um elemento-->
+        Tudo dentro da tag
+    </h1>
+    <h1 id="Título-2" class="fundo-vermelho"> <!--o id deve ser único-->
+                                              <!--será usado em javascript e CSS-->
+    </h1>
+    <p>
+        Um texto <b class="bold">qualquer</b> <!--coloca em negrito o trecho-->
+    </p>
+    <p>
+        Um texto <b class="bold">qualquer</b> <!--coloca em negrito o trecho-->
+    </p>
+</body>
+</html>

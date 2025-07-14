@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /**{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; }*//*inclui o valor inclui o conteúdo, o padding e a borda no calculo do tamanho da box*/
+        
+        .section-one{
+            width: 200px; /*do content edge*/
+            height: 150px; /*altura - se definida fixo - se não adaptável*/
+            /*background-color: deeppink;*/
+            background-image: url(https://img.freepik.com/fotos-premium/fundo-preto-da-parede-de-concreto-aspero-com-luzes-de-neon-e-luzes-brilhantes-efeito-de-luz-rosa-roxo-e-azul-na-parede-de-cimento-vazia_35257-949.jpg?semt=ais_hybrid&w=740);
+            background-size: cover;
+            background-position: center center;
+            border: 5px solid black; /*em volta da box inteira - passa todos os parâmetros de uma vez*/
+            /*border-style: solid; /*ou pode passar separadamente os parâmetros*/
+            /*border-width: 10px;*/
+            border-bottom: 10px solid firebrick; /*borda inferior*/
+            border-top: 10px solid blue; /*borda superior*/
+            border-left: 10px solid yellow; /*borda esquerda*/
+            border-right: 10px solid green; /*borda direita*/
+
+            padding: 15px; /*espaçamento entre o conteúdo e a borda - espaço igual em todos os lados*/ 
+            /*padding: 15px 0 0 0; /*espaçamento entre o conteúdo e a borda - sentido horário (cima, dir, baixo, esq)*/ 
+            color: white;
+            margin: 20px; /*quando tiver duas margens se encontrando, o tamanho da maior margem prevalece*/
+                          /*os tamanhos não se somam*/
+        }
+
+        .section-two{
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <!--Box Model - cada elemento é representado por uma box retangular-->
+    <!--Dentro da section precisa ter um heding-->
+    <!--O navegador configura automaticamente a largura e altura do bloco, se não for especificado-->
+    <!--content edge onde fica o conteúdo da box-->
+    <!--padding espamento preenchido entre o conteúdo e a borda-->
+    <!--border edge contorno em volta do padding-->
+    <!--margin é a distancia das bordas da tela e de outros conteúdos-->
+    <section class="section-one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Placeat sequi, maiores explicabo ipsum quasi quidem ad incidunt rerum optio dolorem hic! 
+        Nisi ipsum quae aspernatur asperiores harum dolorem non sunt!</section>
+    <section class="section-two">2</section>
+</body>
+</html>

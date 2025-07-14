@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--link:css-->
+    <link rel="stylesheet" href="style.css"> 
+
+    <style>
+        body {
+            /*w100p*/
+            width: 100%;
+
+            /*h100vh*/
+            height: 100vh;
+
+            /*m10rem*/
+            margin: 10rem;
+
+            /*p10p*/
+            padding: 10%;
+
+            /*df*/
+            display: flex;
+
+            /*dg*/
+            display: grid;
+
+            /*dn*/
+            display: none;
+
+            /*db*/
+            display: block;
+
+            /*bg*/
+            background: #000;
+
+            /*bgi*/
+            background-image: url();
+
+            /*t10rem*/
+            top: 10rem;
+
+            /*b10rem*/
+            bottom: 10rem;
+
+            /*r10rem*/
+            right: 10rem;
+
+            /*bxz*/
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <!--div.classe-um.classe-dois-->
+    <div class="classe-um classe-dois">Conteúdo</div>
+
+    <!--div#meu-id-->
+    <div id="meu-id"></div>
+
+    <!--div#meu-id.minha-classe.outraclasse-->
+    <div id="meu-id" class="minha-classe outra-classe"></div>
+
+    <!--div#meu-id.minha-classe{Conteúdo}-->
+    <div id="meu-id" class="minha-classe">Conteúdo</div>
+
+    <!--div#meu-id-$.minha-classe.minha-outra-classe{Conteúdo $}*3-->
+    <div id="meu-id-1" class="minha-classe minha-outra-classe">Conteúdo 1</div>
+    <div id="meu-id-2" class="minha-classe minha-outra-classe">Conteúdo 2</div>
+    <div id="meu-id-3" class="minha-classe minha-outra-classe">Conteúdo 3</div>
+
+    <!--ul>li{Conteúdo $}*10-->
+    <ul>
+        <li>Conteúdo 1</li>
+        <li>Conteúdo 2</li>
+        <li>Conteúdo 3</li>
+        <li>Conteúdo 4</li>
+        <li>Conteúdo 5</li>
+        <li>Conteúdo 6</li>
+        <li>Conteúdo 7</li>
+        <li>Conteúdo 8</li>
+        <li>Conteúdo 9</li>
+        <li>Conteúdo 10</li>
+    </ul>
+
+    <!--ul>(li>a{Conteúdo $}[href="http://link.com/condeudo-$"])*2-->
+    <ul>
+        <li><a href="http://link.com/condeudo-1">Conteúdo 1</a></li>
+        <li><a href="http://link.com/condeudo-2">Conteúdo 2</a></li>
+    </ul>
+
+    <!--section>h1+div>(p>span)*3-->
+    <section>
+        <h1></h1>
+        <div>
+            <p><span></span></p>
+            <p><span></span></p>
+            <p><span></span></p>
+        </div>
+    </section>
+
+</body>
+</html>

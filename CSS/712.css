@@ -1,0 +1,14 @@
+body { /*propridades passam para as tags internas (filhas)*/
+    font-family: sans-serif;
+    color: red;
+}
+
+#texto { /*mais interna, sobrepoe body*/
+    color: blue;
+}
+
+p {
+    font-size: initial; /*não herda*/
+    font-size: inherit; /*herda*/
+}
+

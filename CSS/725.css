@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    background: yellow;
+    height: 800px;
+}
+
+.flex-item {
+    /*flex-grow: 1; /*cresce o elemento para todo o espaço disponível na tela*/
+                  /*divide o espaço entre os elementos*/
+    /*flex-basis: 320px; /*tamanho base do elemento*/
+    /*flex-shrink: 1; /*1 permite diminuir; 0 elemento não diminui*/
+    /*align-items: flex-start;*/
+    width: 100%;
+    /*height: 200px;*/
+    /*margin-bottom: 2%;*/
+    color: #FFF;
+    background: red;
+}
+
+/*.flex-item:nth-child(2) {
+    /*font-size: 40px;*/
+/*    background: purple;
+    /*flex-grow: 10; /*aumenta a proporção do espaço vazio que o elemento irá receber*/
+/*}*/
+
+.flex-item:nth-child(2) {
+    align-self: stretch;
+}
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(4) {
+    align-self: center;
+}
+
+.flex-item:nth-child(5) {
+    order: -1; /*coloca o elemento na primeira posição*/
+}
+
+.flex-item:nth-child(1) {
+    order: 5; /*coloca o elemento na ultima posição*/
+}

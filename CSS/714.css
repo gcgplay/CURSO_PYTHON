@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid .col {
+    /*display: block; /*blocos um embaixo do outro*/
+    /*display: inline-block; /*blocos um do lado do outro*/
+    /*display: inline; /*não aparece tamanho*/
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin: 30px; /*mmargens se sobrepõem*/
+    float: left; /*cada uma ocupa seu espaço, as margens não se sobrepõem*/
+}
+
+p {
+    clear: left; /*não aceita nada a sua esquerda*/
+    clear: right; /*não aceita nada a sua direita*/
+    clear: both; /*não aceita nada dos dois lados*/
+}

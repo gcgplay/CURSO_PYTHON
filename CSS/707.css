@@ -1,0 +1,52 @@
+/*como quer que a transição de estado ocorra - tempo*/
+.heading {
+    transition: all 1s ease-in-out;
+}
+
+.heading:hover {
+    background: red;
+}
+
+a {
+    color: salmon;
+}
+
+a:link { /*não visitado*/
+    color: deeppink;
+}
+
+a:visited { /*se foi aberto*/
+    color: green;
+}
+
+a:hover { /*passa mouse*/
+    background: cyan;
+    color: orangered;
+}
+
+a:active { /*quando clica*/
+    background: lawngreen;
+}
+
+input:focus { /*sombra em volta do input*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    outline: none;
+    border: 2px solid red;
+}
+
+input:disabled { /*estado do input desativado*/
+    background-color: gray;
+}
+
+input:checked { /*aumenta o tamanho do checkbox*/
+    width: 50px;
+    height: 50px;
+}
+
+input:checked + p { /*altera o background do p adjacente ao checkbox*/
+    background-color: aqua;
+}
+
+.pai .lista li:first-child { /*primeiro filho*/
+    background: rebeccapurple;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style> /* --CSS-- */
+        h1{
+            background: red;
+        }
+
+        /* pega a classe da imagem */
+        .img-in-text {
+            width: 50px;
+            height: 40px;
+        }
+
+        .azul{
+            font-size: 24px;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!--<h1 style="background: red;">Cabeçalho</h1>--> <!--passando CSS dentro da tag-->
+    <h1 style="background: red;">Cabeçalho</h1> <!--block-->
+
+    <!--adicionando elementos inline - no meio do texto-->
+    <p><b>Negrito comum - estado físico</b> Lorem ipsum 
+        <strong>colocar uma expressividade mais forte,</strong>
+        <strong>falar mais forte</strong> 
+        <i>itálico</i> sit amet <em>ênfase - apacerece em itálico</em> consectetur 
+        <a href="https://www.google.com.br/" target="_blank">abre link em nova aba</a> adipisicing elit. 
+        Necessitatibus blanditiis atque a dolor aspernatur sint 
+        
+        <!--Copiar endereço da imagem-->
+        <img src="https://img.freepik.com/psd-gratuitas/flor-cineraria-png-isolada-em-fundo-transparente_191095-10910.jpg?semt=ais_hybrid&w=740" alt="Descrição da imagem" width="50" height="40">
+
+        <!--Adicionar imagem clicável com link-->
+        <a href="https://www.google.com.br/" target="_blank">
+            <img class="img-in-text" src="https://png.pngtree.com/png-clipart/20220604/ourmid/pngtree-gradient-circle-text-box-prmotion-sale-banner-png-image_4852602.png" alt="Descrição da imagem">
+        </a>
+        fugit <del>palavra excluída/errada</del> <ins>palavra correta/corrigida</ins>quibusdam esse <code>fazer uma citação com estilo de código</code> aut praesentium <s>Texto tachado</s> <u>sublinhado</u> ex voluptatum explicabo 
+        <span class="azul">adiciona um conteiner inline, pode adicionar um estilo em determinada parte</span>
+        totam 2<sup>elevado</sup> fuga H<sub>2</sub>O consequatur <q cite="https://www.google.com.br/">Citação...</q>cumque error, quo iusto!</p> <!--block-->
+
+        <!--para citar um código mantendo a formação e colocando o estilo de fonte-->
+        <pre> <!--insere um texto pré formatado, mantem todos os espaços-->
+            <code>
+                # Definição
+                def soma(x, y, z):
+                    print(f'{x=} y={y} {z=}', '|', 'x + y + z = ', x + y + z)
+            </code>
+        </pre>
+        <hr> <!--Adiciona uma linha horizontal-->
+        <blockquote>Aqui estou fazendo um bloco de citação. Ele terá um recuo do canto esquerdo da tela. Deve ser inserido fora do paragrafo.</blockquote>
+        <div>Eu soy uno bloco, é display block, não fica corretamente no meio do texto</div>
+</body>
+</html> 

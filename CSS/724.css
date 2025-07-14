@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; /*quebra a linha de acordo com o tamanho do elemento*/
+    align-items: center;
+    /*align-content: center;*/
+    background: yellow;
+    height: 640px;
+    width: 960px;
+}
+
+.flex-item {
+    width: 33.33%; /*3 elementos por linha*/
+    color: #FFF;
+    background: red;
+}

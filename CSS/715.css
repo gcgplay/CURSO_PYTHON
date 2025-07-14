@@ -1,0 +1,14 @@
+
+p {
+    background-color: #FF0000;  /*hexadecimal- red, green, blue - abcdef0123456789*/ 
+    color: rgb(128, 128, 128); /* cor rgb - até 255*/
+    padding: 10px;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    border: solid 5px hsl(0, 100%, 50%); /*tom, saturação e brilho*/
+    background-color: solid 5px rgba(0, 0, 0, 0.5); /*translúcido*/
+}
+

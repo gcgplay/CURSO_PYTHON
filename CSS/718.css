@@ -1,0 +1,34 @@
+
+* {
+    margin: 0;
+}
+.pai {
+    
+}
+
+.filha1, .filha2 {
+    width: 300px;
+    height: 300px;
+    /*background: rgba(255, 0, 0, 0.5);*/
+    background: red;
+    margin: 10px;
+}
+
+.filha2 {
+    background: yellow;
+    /*camada abaixo*/
+    z-index: 1;
+    /*z-index: -1; /*manda o elemento para trás de tudo*/
+}
+
+.filha1 {
+    /*position: relative; /*movimenta o objeto, mas deixa um espaço em branco onde ele estava*/
+    position: absolute; /*como se muda-se o elemento de camada, ele fica sobre o conteúdo*/
+    /*configuração para colocar o elementro centralizado*/
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px;
+    /*camada acima*/
+    z-index: 2;
+}

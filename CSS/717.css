@@ -1,0 +1,19 @@
+p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold; /*negrito*/
+    /*direction: rtl; /*da direita para a esquerda*/
+    direction: ltr; /*da esquerda para a direita*/
+    letter-spacing: 2px; /*espaçamento entre as letras*/
+    word-spacing: 5px; /*espaçamento entre as palavras*/
+    line-height: 30px; /*altura da linha*/
+    text-align: center; /*alinhamento do texto*/
+    text-decoration: underline; /*linhas de decoração do texto*/
+    text-indent: 50px; /*parágrafo*/
+    text-shadow: 2px 2px red; /*sombra*/
+    text-transform: uppercase; /*tudo maiusculo, primeira maiuscula ou minúsculo*/
+    /*text-transform: capitalize;*/ 
+    /*text-transform: lowercase;*/ 
+
+
+}
