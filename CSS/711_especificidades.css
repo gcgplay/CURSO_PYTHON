@@ -1,0 +1,32 @@
+/*
+ID -> Classes, Atributos e Pseudo-classes -> Elementos e Pseudo-elementos
+1       0                                       0*/
+
+/*id*/
+#p { /*passar o mouse - especificação do seletor - (1, 0, 0)*/
+    background: red;
+}
+
+/*classe*/
+.p { /*(0, 1, 0)*/
+    background: yellow;
+}
+
+/*id e classe*/
+#p.p { /*(1, 1, 0)*/
+    background: yellow;
+}
+
+/*elemento, id, classe*/
+p#p.p { /*(1, 1, 1)*/
+    background: red;
+}
+
+/*2 ids*/
+#b p#p.p { /*(2, 1, 1)*/
+    background: red;
+}
+
+body#b.bclass p#p.p { /*(2, 2, 2)*/
+    background: red;
+}

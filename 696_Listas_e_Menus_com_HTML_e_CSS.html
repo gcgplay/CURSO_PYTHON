@@ -1,22 +1,73 @@
+<!--listas podem ser usadas em barras de navegação e menus-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: black;
+            /*height: 50px;*/
+            display: flex;
+            justify-content: center; /*centraliza horizontal*/
+            align-items: center; /*centraliza vertical*/
+            
+        }
+
+        nav a { /*inline*/
+            color: white;
+            text-decoration: none; /*tirar o sublinado do link*/
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: red; /*coloca a cor em cada link "a"*/
+            display: block; /*transforma em em bloco, empurra elementos*/
+                            /*assim pode se passar altura e padding em "a"*/
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover { /*sombra ao passar o mouse*/
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none; /*tira os marcadores de lista*/
+            background: red;
+        }
+    </style>
 </head>
 <body>
-    <!--Listas podem ser usadas em barras de navegação e menus-->
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </nav>
     <ul> <!--lista NÃO ordenada-->
         <li>Item 1</li> <!--item de lista-->
         <li>Item 2</li>
         <li>Item 3</li>
     </ul>
 
-    <ol type="A"> <!--lista ORDENADA-->
-        <li>Item 1</li> <!--item de lista-->
+    <ol type="A" start="C"> <!--lista ORDENADA - 1, i, I, A, a--> 
+        <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
     </ol>
+
+    <!--lista de termos com descrição-->
+    <dl>
+        <dt>Café</dt>
+        <dd>bebida preta quente</dd>
+    </dl>
 </body>
 </html>

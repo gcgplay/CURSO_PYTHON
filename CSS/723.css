@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex; /*habilita*/
+    /*eixo principal/*
+    flex-direction: row; /*organizados horizontalmente - esquerda para a direita*/
+    /*flex-direction: column; /*organizados vericalmente - de cima para baixo*/
+    justify-content: flex-start; /*alinhamento no eixo principal*/
+                                 /*start, center, end*/
+
+    /*align-items: stretch; /*flex-start; flex-end*/
+    /*eixo perpendicular*/
+    align-items: baseline; /*baseado na fonte*/
+    background: yellow;
+    height: 500px;
+}
+
+.flex-item {
+    color:#FFF;
+    background: red;
+    width: 100%;
+    margin: 10px;
+}
+
+.flex-item:nth-child(3) {
+    font-size: 40px;
+}

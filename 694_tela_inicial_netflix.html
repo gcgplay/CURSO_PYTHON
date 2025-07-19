@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{ /*seleciona toda a página*/
+            /*retirar a margin e padding de toda a página*/
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading{
+            /*background: #e50914;*/
+            /*display: flex; /*torna os elementos flex na mesma linha*/
+            /*justify-content: space-between; /*coloca cada elemento em um canto*/
+            background: rgba(0, 0, 0, 0.5); /*red, green, blue, trasparencia*/
+        }
+
+        #heading div{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        #heading .h1{
+            font-size: 20px;
+            text-transform: uppercase;
+            /*color: white;*/
+            /*margin-top: 20; - desce o elemento*/
+            /*padding-top: 15px; desce o elemento e preenche o espaço*/
+            /*padding-left: 15px;*/
+            /*padding-bottom: 15px;*/
+            padding: 15px 0;
+        }
+
+        #heading a{
+            color: white;
+            text-decoration: none; /*linha debaixo*/
+            font-family: sans-serif;
+        }
+
+        body{
+            background-image: url(https://cdn.telaviva.com.br/wp-content/uploads/2021/08/netflix-.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="h1">
+                <a href="#">Netflix</a>
+            </h1>
+
+            <h2 class="h1">
+                <a href="#">Netflix</a>
+            </h2>
+        </div>
+    </header>
+    
+</body>
+</html>

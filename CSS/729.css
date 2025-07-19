@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    
+}
+
+.grid div {
+    background: tomato;
+    min-height: 100px;
+    /*gap: 30px; /*MELHOR USAR GAP*/
+    /*column-gap: 30px;*/
+    margin-bottom: 30px;
+    margin-right: 30px; /*ficará uma borda sobrando*/
+    /*MOSTRA UMA GAMBIARRA CASO O NAVEGADOR NÂO SEJA COMPATÍVEL COM GAP*/
+}
+
+.grid div:nth-child(5) {
+    background: darkred;
+}

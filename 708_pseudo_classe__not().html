@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:not(.sem-formatacao) { /*todos os p menos o que tem class sem-formatacao*/
+            color: blue;
+        }
+
+        input:checked + p { /*background no p abaixo do checkbox*/
+            background: red;
+        }
+
+        input:not(:checked) + p {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, obcaecati nostrum
+        libero deserunt minima suscipit vero, architecto dolorem debitis cumque vitae molestias 
+        impedit eius totam qui temporibus magni! Architecto, eligendi!</p>
+    <p class="sem-formatacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, obcaecati nostrum
+        libero deserunt minima suscipit vero, architecto dolorem debitis cumque vitae molestias 
+        impedit eius totam qui temporibus magni! Architecto, eligendi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, obcaecati nostrum
+        libero deserunt minima suscipit vero, architecto dolorem debitis cumque vitae molestias 
+        impedit eius totam qui temporibus magni! Architecto, eligendi!</p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+"""
+DocString
+Python = Linguagem de programação
+Tipo de tipagem = Dinâmica / Forte --> já sabe qual o tipo da informação passada
+str -> string -> texto
+Strings são textos que estão dentro de aspas
+"""
+print(1234)
+
+# Aspas simples
+print('Luiz Otávio')
+print(1, 'Luiz "Otávio"') - usar ' ' para imprimir elemento com " "
+
+# Aspas duplas
+print("Luiz Otávio")
+print(2, "Luiz 'Otávio'") - usar " " para imprimir elemento com ' '
+
+# Caractere de Escape (\) - para adicionar um string com aspas
+print("Luiz \"Otávio\"")
+
+# r - para exibir o caractere de escape
+print(r"Luiz \"Otávio\"")

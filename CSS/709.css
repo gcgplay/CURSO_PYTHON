@@ -1,0 +1,15 @@
+ul li:nth-child(5) { /*escolhe o item da lista*/
+    background-color: green;
+}
+
+ul li:nth-child(even) { /*itens pares - para IMPARES odd*/ 
+    background-color: palevioletred;
+}
+
+/*ul li:nth-child(3n) { /*de 3 em 3*/ 
+/*    background-color: palevioletred;
+}*/
+
+/*ul li:nth-child(3n+5) { /*começando do 5º de 3 em 3*/ 
+/*    background-color: palevioletred;
+}*/

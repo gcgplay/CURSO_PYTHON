@@ -1,0 +1,82 @@
+<!--eram utlizadas uma dentro da outra para fazer sites-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse; /*tira espaço entre colunas - une as bordas*/
+            width: 100%; /*estica tamanho tela*/
+        }
+
+        table td, table th {
+            border: 1px solid gray;
+            padding: 5px;
+            text-align: center;
+        }
+
+        table caption {
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        tfoot td {
+            background: darkgray;
+            font-weight: bold;
+        }
+
+        .responsive-table { /*coloca scrool horizontal na tabela*/
+            max-width: 100;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Atirei o pau no gato, mas o gato não morreu.</p>
+    <div class="responsive-table"> <!--para acrescentar scrool na tabela-->
+        <table>
+            <caption>Descrição da tabela</caption>
+            <thead> <!--cabeçalho--> 
+                <tr> <!--linha-->
+                    <th>Título 1</th> <!--coluna/título-->
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td> <!--coluna/corpo-->
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">Ocupar 2 colunas e 2 linhas</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td>Corpo 1</td> 
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+            /*display: block; /*quebrar linha*/
+        }
+    </style>
+</head>
+<body>
+    <!--apenas action e method necessários-->
+    <form action="#" method="get" target="_blank" autocomplete="off"> <!--block-->
+        <!--é proibido alinhar um formulário dentro de outro-->
+        <!--<section>-->
+            <!--<h1>Cabeça</h1>-->
+        <p>O meu formulário</p>
+
+            <!--<fieldset>-->
+                <!--<legend>Descrição</legend>-->
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"
+            placeholder="Digite seu nome" value="Gabriel"> <!--identificadores, valor padrão-->
+            <!--disable - input desativado-->
+            <!--readonly - input clicável, mas não alterável-->
+            <!--required - obrigatório preencher-->
+        </p>
+
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" id="dev" name="dev" value="sim">
+        </p>
+
+        <p>
+            Gênero: <br> 
+            <!--radio - opção única-->
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="otro">Outro</label>
+            <input type="radio" id="outro" name="genero" value="outro">
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button> <!--volta formulário para o estado padrão-->
+        </p>
+            </fieldset>
+        </section>
+    </form>
+</body>
+</html>

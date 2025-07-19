@@ -1,0 +1,18 @@
+ul li::after { /*elemento depois*/
+    content: 'Pseudo Elemento';
+    color:aquamarine;
+    background:black;
+}
+
+p::first-letter { /*configura apenas a primeira letra*/
+    font-size: 50px;
+}
+
+p::selection { /*cores ao selecionar*/
+    background: black;
+    color: aqua;
+}
+
+::placeholder {
+    color: blue;
+}

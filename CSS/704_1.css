@@ -1,0 +1,22 @@
+.color-red {
+    color: red;
+}
+
+body.error div.main-content h2.heading { /*elemento especificado*/
+    font-style: italic;
+    color: green;
+}
+
+div {
+    color: initial; /*para separar os estilos das div*/
+    margin-left: 10px;
+}
+
+.pai {
+    background: purple;
+}
+
+/*ou atribui uma classe filha*/
+.pai .filha { /*espaço*/
+    background: aqua;
+}
